@@ -19,3 +19,11 @@ read FARS data (US National Highway Traffic Safety Administration's Fatality Ana
 it is necessary to download the fars files before, this functions read the files from the working directory, if not an error will be thrown
 Throws an error if wrong file name is provided
 }
+\examples{
+library(dplyr)
+library(readr)
+library(tidyr)
+f13path<-system.file("inst", "extdata", "accident_2013.csv.bz2")
+file.copy(from=c(f13path),to=getwd())
+fars_read('accident_2013.csv.bz2')
+}
