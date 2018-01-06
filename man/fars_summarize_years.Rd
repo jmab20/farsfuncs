@@ -22,6 +22,8 @@ Throws a warning of "invalid year:" if a numeric other than
 }
 \examples{
 library(dplyr)
+library(readr)
+library(tidyr)
 fars_summarize_years(c(2013))
 
 }
