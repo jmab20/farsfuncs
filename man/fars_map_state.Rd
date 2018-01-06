@@ -12,7 +12,7 @@ fars_map_state(state.num, year)
 \item{year}{, year from which the data will be displayed}
 }
 \value{
-nothing, only plots the map
+This function returns a graphical object.
 }
 \description{
 map accidents by state and year with US National Highway Traffic Safety Administration's Fatality Analysis Reporting System (FARS)

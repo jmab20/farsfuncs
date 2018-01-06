@@ -138,8 +138,6 @@ fars_summarize_years <- function(years) {
 #' file.copy(from=c(f13path),to=getwd())
 #' fars_map_state(1, 2013)
 #'
-#' @importFrom dplyr filter
-#' @importFrom maps map
 #' @importFrom graphics points
 #'
 #' @export
