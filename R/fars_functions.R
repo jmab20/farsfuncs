@@ -15,9 +15,9 @@
 #' library(dplyr)
 #' library(readr)
 #' library(tidyr)
-#' f13path<-system.file("inst", extdata", "accident_2013.csv.bz2")
+#' f13path<-system.file("inst", "extdata", "accident_2013.csv.bz2")
 #' file.copy(from=c(f13path),to=getwd())
-#' fars_read('accident_2013.csv')
+#' fars_read('accident_2013.csv.bz2')
 #' @export
 fars_read <- function(filename) {
   if(!file.exists(filename))
