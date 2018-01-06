@@ -122,7 +122,7 @@ fars_summarize_years <- function(years) {
 #' @param state.num, state from which the data will be displayed (number 1- 56)
 #' @param year , year from which the data will be displayed
 #'
-#' @return nothing, only plots the map
+#' @return This function returns a graphical object.
 #'
 #' @details
 #' it is necessary to download the fars files before, this functions read the files from the working directory, if not an error will be thrown
@@ -133,10 +133,13 @@ fars_summarize_years <- function(years) {
 #' library(readr)
 #' library(tidyr)
 #' library(maps)
+#' library(graphics)
 #' f13path<-system.file("extdata", "accident_2013.csv.bz2", package = "farsfuncs")
 #' file.copy(from=c(f13path),to=getwd())
 #' fars_map_state(1, 2013)
 #'
+#' @importFrom dplyr filter
+#' @importFrom maps map
 #' @importFrom graphics points
 #'
 #' @export
