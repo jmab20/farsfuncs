@@ -101,6 +101,8 @@ fars_read_years <- function(years) {
 #'
 #' @examples
 #' library(dplyr)
+#' library(readr)
+#' library(tidyr)
 #' fars_summarize_years(c(2013))
 #'
 #' @export
@@ -126,12 +128,16 @@ fars_summarize_years <- function(years) {
 #' it is necessary to download the fars files before, this functions read the files from the working directory, if not an error will be thrown
 #' Throws an error of "invalid State Number:" for invalid state number.
 #'
-#' @importFrom graphics points
-#'
 #' @examples
+#' library(dplyr)
+#' library(readr)
+#' library(tidyr)
+#' library(maps)
 #' f13path<-system.file("extdata", "accident_2013.csv.bz2", package = "farsfuncs")
 #' file.copy(from=c(f13path),to=getwd())
 #' fars_map_state(1, 2013)
+#'
+#' @importFrom graphics points
 #'
 #' @export
 #'

@@ -22,6 +22,10 @@ it is necessary to download the fars files before, this functions read the files
 Throws an error of "invalid State Number:" for invalid state number.
 }
 \examples{
+library(dplyr)
+library(readr)
+library(tidyr)
+library(maps)
 f13path<-system.file("extdata", "accident_2013.csv.bz2", package = "farsfuncs")
 file.copy(from=c(f13path),to=getwd())
 fars_map_state(1, 2013)
